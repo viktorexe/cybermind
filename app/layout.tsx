@@ -3,11 +3,11 @@ import type { Metadata } from 'next'
 import './styles/globals.css'
 
 export const metadata: Metadata = {
-  title: 'Cyber Word Guess Arena',
-  description: 'A futuristic word guessing game with cyberpunk aesthetics',
+  title: 'Wordly - Daily Word Puzzle',
+  description: 'A clean and elegant word guessing game. Guess the 5-letter word in 6 tries!',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   manifest: '/manifest.json',
-  themeColor: '#00ffff',
+  themeColor: '#007bff',
   other: {
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent'
