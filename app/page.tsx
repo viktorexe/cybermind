@@ -50,7 +50,7 @@ export default function Home() {
         score={score}
         level={level}
         lives={lives}
-        timeLeft={timeLeft}
+        streak={streak}
         onHint={handleHintClick}
       />
       
