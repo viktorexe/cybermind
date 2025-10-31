@@ -43,10 +43,12 @@ export function useGameLogic() {
     setCurrentGuess('')
 
     if (currentGuess === currentWord) {
-      const roundScore = calculateScore(timeLeft, newGuesses.length, level, hintsUsed)
+      const roundScore = calculateScore(0, newGuesses.length, level, hintsUsed)
       setScore(prev => prev + roundScore)
+      setStreak(prev => prev + 1)
       setGameState('levelComplete')
     } else if (newGuesses.length >= maxAttempts) {
+      setStreak(0)
       setLives(prev => {
         const newLives = prev - 1
         if (newLives <= 0) {
