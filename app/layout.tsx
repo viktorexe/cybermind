@@ -55,6 +55,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Game",
+              "name": "Wordly - Daily Word Puzzle",
+              "description": "Play Wordly, the addictive word guessing game! Guess the 5-letter word in 5 tries.",
+              "url": "https://wordlygame.vercel.app",
+              "genre": "Word Game",
+              "gamePlatform": "Web Browser",
+              "operatingSystem": "Any",
+              "applicationCategory": "Game",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            })
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   )
