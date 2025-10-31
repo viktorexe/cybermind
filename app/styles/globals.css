@@ -120,12 +120,11 @@ body {
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .game-container {
-    padding: 0.75rem;
-    gap: 1rem;
+    padding: 0;
   }
   
   .game-main {
-    gap: 1.5rem;
+    padding: 0.5rem;
   }
 }
 
