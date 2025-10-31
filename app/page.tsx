@@ -6,6 +6,7 @@ import GameBoard from './components/GameBoard'
 import VirtualKeyboard from './components/VirtualKeyboard'
 import GameHeader from './components/GameHeader'
 import GameOverModal from './components/GameOverModal'
+import Footer from './components/Footer'
 import { useGameLogic } from './hooks/useGameLogic'
 import { useAudioFeedback } from './hooks/useAudioFeedback'
 
@@ -68,6 +69,8 @@ export default function Home() {
           disabled={gameState !== 'playing'}
         />
       </main>
+
+      <Footer />
 
       <AnimatePresence>
         {(gameState === 'won' || gameState === 'lost' || gameState === 'levelComplete') && (
