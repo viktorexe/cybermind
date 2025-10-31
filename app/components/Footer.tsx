@@ -71,7 +71,7 @@ export default function Footer() {
                       <p>Permission is granted to temporarily use Wordly for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.</p>
                       
                       <h3>3. Disclaimer</h3>
-                      <p>The game is provided "as is" without any representations or warranties, express or implied. We make no representations or warranties in relation to this game or the information and materials provided.</p>
+                      <p>The game is provided &ldquo;as is&rdquo; without any representations or warranties, express or implied. We make no representations or warranties in relation to this game or the information and materials provided.</p>
                       
                       <h3>4. Limitations</h3>
                       <p>In no event shall Wordly or its suppliers be liable for any damages arising out of the use or inability to use the game.</p>
@@ -95,7 +95,7 @@ export default function Footer() {
                       <p>Wordly is designed with privacy in mind. We do not collect, store, or transmit any personal information. All game data is stored locally on your device.</p>
                       
                       <h3>2. Local Storage</h3>
-                      <p>The game uses your browser's local storage to save your game progress, statistics, and preferences. This data never leaves your device.</p>
+                      <p>The game uses your browser&apos;s local storage to save your game progress, statistics, and preferences. This data never leaves your device.</p>
                       
                       <h3>3. No Tracking</h3>
                       <p>We do not use cookies, analytics, or any tracking technologies. Your gameplay is completely private.</p>
