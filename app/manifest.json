@@ -1,10 +1,10 @@
 {
-  "name": "Wordly - Daily Word Puzzle",
+  "name": "Wordly - Daily Word Puzzle Game",
   "short_name": "Wordly",
-  "description": "A clean and elegant word guessing game. Guess the 5-letter word in 5 tries!",
+  "description": "Play Wordly, the addictive word guessing game! Guess the 5-letter word in 5 tries with hints and scoring.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#1a1a1a",
   "theme_color": "#007bff",
   "orientation": "portrait",
   "icons": [
