@@ -6,16 +6,11 @@ interface GameHeaderProps {
   score: number
   level: number
   lives: number
-  timeLeft: number
+  streak: number
   onHint: () => void
 }
 
-export default function GameHeader({ score, level, lives, timeLeft, onHint }: GameHeaderProps) {
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = seconds % 60
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
+export default function GameHeader({ score, level, lives, streak, onHint }: GameHeaderProps) {
 
   return (
     <motion.header 
@@ -71,11 +66,15 @@ export default function GameHeader({ score, level, lives, timeLeft, onHint }: Ga
           </div>
           
           <div className={styles.stat}>
-            <span className={styles.label}>TIME</span>
+            <span className={styles.label}>STREAK</span>
             <motion.span 
-              className={`${styles.value} ${timeLeft <= 10 ? styles.warning : ''}`}
+              className={styles.value}
+              key={streak}
+              initial={{ scale: 1.2 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.2 }}
             >
-              {formatTime(timeLeft)}
+              {streak}
             </motion.span>
           </div>
         </div>

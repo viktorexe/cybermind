@@ -122,7 +122,7 @@ export function useGameLogic() {
     score,
     level,
     lives,
-    timeLeft,
+    streak,
     letterStates,
     hintsUsed,
     handleKeyPress,
