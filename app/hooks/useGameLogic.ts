@@ -18,14 +18,14 @@ export function useGameLogic() {
   const maxAttempts = 6
 
   const initializeGame = useCallback(() => {
-    const wordData = generateWord(level)
+    const wordData = generateWord()
     setCurrentWord(wordData.word)
     setGuesses([])
     setCurrentGuess('')
     setGameState('playing')
     setLetterStates({})
     setHintsUsed(0)
-  }, [level])
+  }, [])
 
   useEffect(() => {
     initializeGame()
