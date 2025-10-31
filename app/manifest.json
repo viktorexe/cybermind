@@ -1,11 +1,11 @@
 {
-  "name": "Wordly - Daily Word Puzzle",
-  "short_name": "Wordly",
-  "description": "A clean and elegant word guessing game. Guess the 5-letter word in 6 tries!",
+  "name": "NeonGuess - Cyberpunk Word Arena",
+  "short_name": "NeonGuess",
+  "description": "A futuristic cyberpunk word guessing game. Crack the 5-letter code in 5 tries!",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#007bff",
+  "theme_color": "#00ffff",
   "orientation": "portrait",
   "icons": [
     {

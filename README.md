@@ -1,6 +1,6 @@
-# Cyber Word Guess Arena
+# NeonGuess - Cyberpunk Word Arena
 
-A futuristic word guessing game with cyberpunk aesthetics, built with Next.js, TypeScript, and React.
+A futuristic cyberpunk word guessing game with neon aesthetics, built with Next.js, TypeScript, and React.
 
 ## Features
 
@@ -48,8 +48,8 @@ The `vercel.json` file is already configured for optimal deployment.
 
 ## Game Rules
 
-- Guess the hidden cyberpunk-themed word
-- 6 attempts per word
+- Crack the hidden cyberpunk code
+- 5 attempts per word
 - 3 lives per game
 - Timer counts down - faster solves = higher scores
 - Use hints (reduces score slightly)
@@ -57,9 +57,9 @@ The `vercel.json` file is already configured for optimal deployment.
 
 ## Controls
 
-- **Physical Keyboard**: Type letters, Enter to submit, Backspace to delete
-- **Virtual Keyboard**: Touch-optimized for mobile devices
-- **Hint Button**: Get clues about the word (limited uses)
+- **Desktop**: Physical keyboard or virtual keyboard
+- **Mobile**: Native keyboard with tap-to-type area
+- **Hint Button**: Get clues about the code (limited uses)
 
 ## Performance
 
