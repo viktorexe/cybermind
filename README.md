@@ -1,77 +1,65 @@
-# NeonGuess - Cyberpunk Word Arena
+# Wordly
 
-A futuristic cyberpunk word guessing game with neon aesthetics, built with Next.js, TypeScript, and React.
+A word guessing game inspired by Wordle, but with some extra features I thought would be fun to add.
 
-## Features
+## What is this?
 
-- 🎮 **Fast-paced gameplay** with timer-based scoring
-- 🌟 **Progressive difficulty** with longer words as you advance
-- 💫 **Cyberpunk UI** with neon glow effects and smooth animations
-- 📱 **Mobile-first design** optimized for touchscreen interactions
-- 🎵 **Audio feedback** using Web Audio API
-- 🏆 **Score system** with multipliers and hint penalties
-- 🔄 **Lives system** with game over mechanics
-- 📤 **Share functionality** for social media
+Basically, you get 5 tries to guess a 5-letter word. Each guess gives you clues about which letters are correct, in the right position, or not in the word at all. Pretty simple concept, but I added some cyberpunk styling because why not?
 
-## Tech Stack
+## Features I built
 
-- **Next.js 14** with App Router
-- **TypeScript** with strict mode
-- **React 18** with hooks
-- **Framer Motion** for animations
-- **CSS Modules** for styling
-- **Web Audio API** for sound effects
+- Clean, responsive design that works on phones
+- Smooth animations (thanks Framer Motion!)
+- Audio feedback when you type
+- Lives system - you get 3 chances before game over
+- Scoring based on how fast you solve it
+- Hint system if you get stuck
+- Level progression with different words
 
-## Getting Started
+## Tech stuff
 
-1. Install dependencies:
+Built with:
+- Next.js 14 (love the new app router)
+- TypeScript (because I like my code to not break)
+- React 18
+- Framer Motion for the fancy animations
+- CSS Modules for styling
+
+## Running it locally
+
+Clone this repo, then:
+
 ```bash
 npm install
-```
-
-2. Run the development server:
-```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+Then go to http://localhost:3000
+
+## How to play
+
+1. Type a 5-letter word
+2. Hit enter
+3. Green = right letter, right spot
+4. Yellow = right letter, wrong spot  
+5. Gray = not in the word
+6. Repeat until you win or run out of tries
+
+On mobile, just tap the "tap to type" area and your keyboard will pop up.
 
 ## Deployment
 
-Deploy to Vercel with zero configuration:
+I set this up to deploy easily on Vercel:
 
 ```bash
 vercel --prod
 ```
 
-The `vercel.json` file is already configured for optimal deployment.
+## Notes
 
-## Game Rules
+- Works best on modern browsers
+- Mobile-friendly (tested on my phone)
+- No ads, no tracking, just a simple game
+- All game data stays on your device
 
-- Crack the hidden cyberpunk code
-- 5 attempts per word
-- 3 lives per game
-- Timer counts down - faster solves = higher scores
-- Use hints (reduces score slightly)
-- Progress through levels with increasing difficulty
-
-## Controls
-
-- **Desktop**: Physical keyboard or virtual keyboard
-- **Mobile**: Native keyboard with tap-to-type area
-- **Hint Button**: Get clues about the code (limited uses)
-
-## Performance
-
-- Zero TypeScript errors in strict mode
-- Optimized for 60fps animations
-- Mobile-first responsive design
-- Efficient re-renders with React hooks
-- Lazy loading and code splitting
-
-## Browser Support
-
-- Modern browsers with ES6+ support
-- Web Audio API for sound effects
-- Touch events for mobile interaction
-- Responsive design for all screen sizes
+Feel free to fork it and make it your own!
