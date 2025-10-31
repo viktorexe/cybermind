@@ -59,7 +59,7 @@ export function useGameLogic() {
         return newLives
       })
     }
-  }, [currentGuess, currentWord, gameState, guesses, timeLeft, level, hintsUsed, maxAttempts, initializeGame])
+  }, [currentGuess, currentWord, gameState, guesses, level, hintsUsed, maxAttempts, initializeGame])
 
   const handleKeyPress = useCallback((key: string) => {
     if (gameState !== 'playing') return

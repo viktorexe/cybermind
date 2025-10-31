@@ -11,7 +11,7 @@ const FIVE_LETTER_WORDS = [
   'HAPPY', 'BRAVE', 'SMART', 'QUICK', 'STRONG', 'CLEAN', 'FRESH', 'SWEET', 'SHARP', 'BRIGHT'
 ]
 
-export function generateWord(level: number): WordData {
+export function generateWord(): WordData {
   const randomIndex = Math.floor(Math.random() * FIVE_LETTER_WORDS.length)
   
   return {
@@ -21,7 +21,7 @@ export function generateWord(level: number): WordData {
   }
 }
 
-export function getWordLength(level: number): number {
+export function getWordLength(): number {
   return 5
 }
 
