@@ -56,12 +56,11 @@ export function calculateScore(
   hintsUsed: number
 ): number {
   const baseScore = 100
-  const timeBonus = Math.floor(timeLeft * 2)
-  const attemptPenalty = (attempts - 1) * 10
+  const attemptBonus = Math.max(0, (7 - attempts) * 20)
   const levelMultiplier = level
   const hintPenalty = hintsUsed * 15
   
-  return Math.max(0, (baseScore + timeBonus - attemptPenalty - hintPenalty) * levelMultiplier)
+  return Math.max(10, (baseScore + attemptBonus - hintPenalty) * levelMultiplier)
 }
 
 export function getHint(word: string, guesses: string[]): string {
