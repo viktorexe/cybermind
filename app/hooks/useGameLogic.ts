@@ -85,6 +85,7 @@ export function useGameLogic() {
   const resetGame = useCallback(() => {
     setScore(0)
     setLevel(1)
+    setStreak(0)
     setLives(3)
     initializeGame()
   }, [initializeGame])
