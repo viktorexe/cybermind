@@ -25,7 +25,7 @@ export default function GameHeader({ score, level, lives, streak, onHint }: Game
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        CYBER WORD ARENA
+        WORDLY
       </motion.h1>
       
       <div className={styles.headerContent}>
