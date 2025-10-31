@@ -58,25 +58,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .game-container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0;
   max-width: 500px;
   margin: 0 auto;
-  gap: 1.5rem;
+  overflow: hidden;
 }
 
 .game-main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem;
+  min-height: 0;
 }
 
 /* Smooth transitions */
