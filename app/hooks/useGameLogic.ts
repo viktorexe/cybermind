@@ -11,7 +11,7 @@ export function useGameLogic() {
   const [score, setScore] = useState(0)
   const [level, setLevel] = useState(1)
   const [lives, setLives] = useState(3)
-  const [timeLeft, setTimeLeft] = useState(60)
+  const [streak, setStreak] = useState(0)
   const [letterStates, setLetterStates] = useState<LetterStates>({})
   const [hintsUsed, setHintsUsed] = useState(0)
 
@@ -23,8 +23,6 @@ export function useGameLogic() {
     setGuesses([])
     setCurrentGuess('')
     setGameState('playing')
-    setLives(3)
-    setTimeLeft(60 + (level * 10))
     setLetterStates({})
     setHintsUsed(0)
   }, [level])
@@ -32,17 +30,6 @@ export function useGameLogic() {
   useEffect(() => {
     initializeGame()
   }, [initializeGame])
-
-  useEffect(() => {
-    if (gameState === 'playing' && timeLeft > 0) {
-      const timer = setTimeout(() => {
-        setTimeLeft(prev => prev - 1)
-      }, 1000)
-      return () => clearTimeout(timer)
-    } else if (timeLeft === 0 && gameState === 'playing') {
-      setGameState('lost')
-    }
-  }, [timeLeft, gameState])
 
   const handleSubmitGuess = useCallback(() => {
     if (currentGuess.length !== currentWord.length || gameState !== 'playing') return
