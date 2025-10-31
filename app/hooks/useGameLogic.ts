@@ -15,7 +15,7 @@ export function useGameLogic() {
   const [letterStates, setLetterStates] = useState<LetterStates>({})
   const [hintsUsed, setHintsUsed] = useState(0)
 
-  const maxAttempts = 6
+  const maxAttempts = 5
 
   const initializeGame = useCallback(() => {
     const wordData = generateWord()
