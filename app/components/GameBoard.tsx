@@ -12,7 +12,7 @@ interface GameBoardProps {
 export default function GameBoard({ word, guesses, currentGuess }: GameBoardProps) {
   const maxAttempts = 5
   const wordLength = word.length
-
+  
   const getLetterClass = (state: LetterState) => {
     switch (state) {
       case 'correct': return styles.correct
