@@ -18,7 +18,7 @@ export default function Home() {
     score,
     level,
     lives,
-    timeLeft,
+    streak,
     letterStates,
     handleKeyPress,
     handleSubmitGuess,
