@@ -8,7 +8,7 @@ export default function Footer() {
         <span className={styles.credit}>Made by viktorexe</span>
         <div className={styles.links}>
           <a 
-            href="https://github.com/viktorexe/neonguess" 
+            href="https://github.com/viktorexe/cybermind" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.link}
