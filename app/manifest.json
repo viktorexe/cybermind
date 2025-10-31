@@ -1,11 +1,11 @@
 {
-  "name": "Cyber Word Guess Arena",
-  "short_name": "CyberWord",
-  "description": "A futuristic word guessing game with cyberpunk aesthetics",
+  "name": "Wordly - Daily Word Puzzle",
+  "short_name": "Wordly",
+  "description": "A clean and elegant word guessing game. Guess the 5-letter word in 6 tries!",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#00ffff",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
   "orientation": "portrait",
   "icons": [
     {
